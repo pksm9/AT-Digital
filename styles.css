@@ -124,3 +124,37 @@ body {
     text-transform: uppercase;
     width: fit-content;
   }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;    
+    position: relative;
+    top: 45px;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 70%; */
+}
+
+.frame {
+    display: flex;
+    width: 70%;
+}
+
+.content-498 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: #6B3CC9;
+    font-size: 27px;
+    
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+}
