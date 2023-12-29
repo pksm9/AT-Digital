@@ -283,10 +283,15 @@ button {
   background-color: var(--text-color-light);
 }
 
-/* @media screen and (max-width: 1200px) {
+
+
+
+
+@media screen and (max-width: 1200px) {
   .banner-frame {
     width: 46.6%;
   }
+
   .banner-content {
     margin: 3% 2% 4% 5%;
   }
@@ -294,6 +299,7 @@ button {
   .frame-content {
     width: 56%;
   }
+
   .frame img {
     height: 42%;
   width: 42%;
@@ -302,13 +308,17 @@ button {
   .footer-message {
     width: 42%;
   }
+
   .footer-description {
     width: 48%;
   }
+
   .footer-list p {
     width: 100%;
   }
 }
+
+
 
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -363,13 +373,20 @@ button {
   }
 }
 
+
+
 @media screen and (max-width: 375px) {
+
   .nav-bar {
     height: 65px;
+    padding: 0;
+    overflow: visible;
   }
+
   .logo {
     padding: 2.2% 0 0 1.6%;
   }
+
   .menu {
     position: absolute;
     display: block;
@@ -377,35 +394,64 @@ button {
     right: 6%;
     cursor: pointer;
   }
+
   .nav-links {
-    overflow: hidden;
-    height: 0;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding: 5.5% 0% 0% 0%;
+    display: none;
   }
+
+  .nav-links.open {
+    /* height: auto; */
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0;
+    background-color: var(--triadic-color-1); 
+    z-index: 1;
+  }
+
+  .nav-links li a {
+    padding: 2.5%;
+    color: var(--text-color-light);
+    border-bottom: var(--analogous-color-1) 1px solid;
+    display: block;
+  }
+
   .banner-content {
     margin: 4.5% 4.5% 10% 6%;
   }
+  
   .banner-text {
     font-size: 36px;
     padding-bottom: 2%;
   }
+
   .frame {
     text-align: center;
     width: 78%;
     padding: 4% 10% 17.5% 10%;
   }
+
   .frame-content {
     margin-bottom: 14%;
     align-items: center;
   }
+
   button {
     padding: 3.5% 8% 3.5% 8%;
     margin: 8% 0 0% 0;
   }
+
   .frame img {
     height: 275px;
     width: 275px;
     margin-bottom: 8%;
   }
+
   .frame-content {
     width: 100%;
     margin-top: 0%;
@@ -415,24 +461,29 @@ button {
     margin-top: 8%;
     margin-bottom: 12%;
   }
+
   .footer-description {
     flex-direction: column;
     width: 80%;
   }
+
   .footer-message {
     width: 95%;
   }
+
   .footer-note {
     width: 90%;
     padding-top: 1.8%;
     margin-bottom: 2.8%;
   }
+
   .footer-list h2 {
     padding-top: 15%;
   }
+
   .footer-list p {
     font-weight: 400;
     padding: 3% 0%;
     width: 90%;
   }
-} */
+}
