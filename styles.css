@@ -1,6 +1,12 @@
-body {
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: thin solid red;
+  }
+  
+  body {
+    
     font-family: "Inter", sans-serif;
   }
   
@@ -13,10 +19,11 @@ body {
   
   a {
     text-decoration: none;
+    color: white;
   }
+  
   p,
   h2 {
-    /* padding: 0; */
     margin: 0;
   }
   
@@ -30,6 +37,10 @@ body {
     /* justify-content: center; */
     top: 0;
     left: 0;
+  }
+  
+  .menu {
+    display: none;
   }
   
   .logo {
@@ -89,7 +100,7 @@ body {
     /* left: 0; */
   }
   
-  .hero-frame {
+  .banner-frame {
     background: linear-gradient(to right, #1cbddd, #4dca79);
     height: auto;
     width: 40%;
@@ -108,14 +119,13 @@ body {
     /* border-radius: 5px; */
   }
   
-  .hero-content {
+  .banner-content {
     display: flex;
     flex-direction: column;
-    /* margin-top: 0px; */
     margin: 4.5% 4.5% 4.5% 9%;
   }
   
-  .hero-text {
+  .banner-text {
     color: #ffffff;
     position: relative;
     font-weight: 700;
@@ -156,7 +166,7 @@ body {
     /* display: block; */
     /* top: 45px; */
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100%;
   }
   
@@ -175,7 +185,7 @@ body {
     flex-direction: column;
     /* margin-left: 30px; */
     margin-top: 8%;
-    width: 45%;
+    width: 48%;
   }
   
   .title {
@@ -232,7 +242,6 @@ body {
     justify-content: space-between;
   }
   
-  
   .footer-list h2 {
     padding-bottom: 5%;
   }
@@ -241,7 +250,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     padding: 4.5% 0%;
-    width:90%;
+    width: 90%;
   }
   
   .footer-note {
@@ -264,6 +273,161 @@ body {
   
   .verticle-line {
     height: auto;
-      width: 1px;
-      background-color: #ffffff;
+    width: 1px;
+    background-color: #ffffff;
   }
+  
+  @media screen and (max-width: 1200px) {
+    .banner-frame {
+      width: 46.6%;
+    }
+    .banner-content {
+      margin: 3% 2% 4% 5%;
+    }
+  
+    .frame-content {
+      width: 56%;
+    }
+    .frame img {
+      height: 346px;
+      width: 346px;
+    }
+  
+    .footer-message {
+      width: 42%;
+    }
+    .footer-description {
+      width: 48%;
+    }
+    .footer-list p {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      float: none;
+      width: 50%;
+    }
+    .logo {
+      padding: 1.2% 0 0 1.6%;
+      margin-left: 2%;
+    }
+  
+    .banner-frame {
+      width: 100%;
+      transform: translate(0%, -2%);
+      position: relative;
+    }
+  
+    .frame {
+      width: 95%;
+      padding: 6% 5% 3% 7%;
+      gap: 5%;
+    }
+    .frame img {
+      height: 275px;
+      width: 275px;
+      margin-bottom: 8%;
+    }
+    .frame-content {
+      width: 52%;
+      margin-top: 0%;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      margin-top: 5%;
+      margin-bottom: 6%;
+    }
+    .footer-message {
+      width: 70%;
+      margin-bottom: 8%;
+    }
+    .footer-logo {
+      padding-bottom: 5%;
+    }
+    .footer-description {
+      width: 80%;
+    }
+    .footer-note {
+      width: 70%;
+      padding-top: 1.2%;
+      margin-bottom: 1.8%;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .nav-bar {
+      height: 65px;
+    }
+    .logo {
+      padding: 2.2% 0 0 1.6%;
+    }
+    .menu {
+      position: absolute;
+      display: block;
+      top: 28%;
+      right: 6%;
+      cursor: pointer;
+    }
+    .nav-links {
+      overflow: hidden;
+      height: 0;
+    }
+    .banner-content {
+      margin: 4.5% 4.5% 10% 6%;
+    }
+    .banner-text {
+      font-size: 36px;
+      padding-bottom: 2%;
+    }
+    .frame {
+      text-align: center;
+      width: 78%;
+      padding: 4% 10% 17.5% 10%;
+    }
+    .frame-content {
+      margin-bottom: 14%;
+      align-items: center;
+    }
+    button {
+      padding: 3.5% 8% 3.5% 8%;
+      margin: 8% 0 0% 0;
+    }
+    .frame img {
+      height: 275px;
+      width: 275px;
+      margin-bottom: 8%;
+    }
+    .frame-content {
+      width: 100%;
+      margin-top: 0%;
+    }
+  
+    .footer-content {
+      margin-top: 8%;
+      margin-bottom: 12%;
+    }
+    .footer-description {
+      flex-direction: column;
+      width: 80%;
+    }
+    .footer-message {
+      width: 95%;
+    }
+    .footer-note {
+      width: 90%;
+      padding-top: 1.8%;
+      margin-bottom: 2.8%;
+    }
+    .footer-list h2 {
+      padding-top: 15%;
+    }
+    .footer-list p {
+      font-weight: 400;
+      padding: 3% 0%;
+      width: 90%;
+    }
+  }
+  
